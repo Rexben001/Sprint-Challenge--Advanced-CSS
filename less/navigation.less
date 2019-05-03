@@ -1,26 +1,44 @@
 // Navigation code here
-header{
-    nav{
-        .display-flex(column);
-        width: 100%;
-        align-items: center;
-        margin: 0 auto ;
-        padding: 1rem;
-        font-size: 150%;
-        background-color: @light-waterloo;
-        @media @phone{
-            margin: 0;
-        }
-        ul{
-            .display-flex(row);
-            justify-content: space-evenly;
-            li{
-                padding: 2rem 2rem 0;
-
-                @media @phone{
-                    padding: 1rem;
-                }
-            }
+header {
+  nav {
+    .display-flex(column);
+    width: 100%;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1rem;
+    font-size: 150%;
+    background-color: @light-waterloo;
+    transition: .9s ease-out;
+    @media @phone {
+      margin: 0;
+    }
+    h2{
+        &:hover{
+            transition: 1s ease-out;
+            color: #4694ee;
+            cursor: pointer;
+            box-shadow: 0 5px 10px @dark-ebony;
         }
     }
+    ul {
+      .display-flex(row);
+      justify-content: space-evenly;
+      transition: 1s ease-out;
+      li {
+        padding: 2rem 2rem 1rem;
+        @media @phone {
+          padding: 1rem;
+        }
+        a {
+          &:hover {
+            transition: .9s ease-out;
+            color: @dark-ebony;
+            font-weight: bolder;
+            border-bottom: solid rgb(24, 14, 14) 3px;
+            animation-name: moveInLeft;
+          }
+        }
+      }
+    }
+  }
 }

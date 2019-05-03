@@ -169,6 +169,10 @@ p {
   font-size: 1.6rem;
   line-height: 1.4;
 }
+a {
+  color: #5E6164;
+  text-decoration: none;
+}
 .container {
   max-width: 800px;
   width: 100%;
@@ -192,28 +196,43 @@ header nav {
   flex-direction: column;
   width: 100%;
   align-items: center;
-  margin: 0 auto ;
+  margin: 0 auto;
   padding: 1rem;
   font-size: 150%;
   background-color: #ededee;
+  transition: 0.9s ease-out;
 }
 @media (max-width: 500px) {
   header nav {
     margin: 0;
   }
 }
+header nav h2:hover {
+  transition: 1s ease-out;
+  color: #4694ee;
+  cursor: pointer;
+  box-shadow: 0 5px 10px #000000;
+}
 header nav ul {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  transition: 1s ease-out;
 }
 header nav ul li {
-  padding: 2rem 2rem 0;
+  padding: 2rem 2rem 1rem;
 }
 @media (max-width: 500px) {
   header nav ul li {
     padding: 1rem;
   }
+}
+header nav ul li a:hover {
+  transition: 0.9s ease-out;
+  color: #000000;
+  font-weight: bolder;
+  border-bottom: solid #180e0e 3px;
+  animation-name: moveInLeft;
 }
 footer {
   color: #22283B;
@@ -311,6 +330,7 @@ footer {
   text-align: center;
   font-size: 1.5rem;
   cursor: pointer;
+  transition: 1s ease-in;
 }
 @media (max-width: 800px) {
   .home .walk .walk-text .btn {
