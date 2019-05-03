@@ -162,6 +162,14 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    max-width: 500px;
+  }
+}
+.container img {
+  width: 100%;
+}
 header nav {
   display: flex;
   flex-direction: column;
@@ -171,6 +179,11 @@ header nav {
   font-size: 150%;
   background-color: #ededee;
 }
+@media (max-width: 500px) {
+  header nav {
+    margin: 1rem 0 0;
+  }
+}
 header nav ul {
   display: flex;
   flex-direction: row;
@@ -178,6 +191,11 @@ header nav ul {
 }
 header nav ul li {
   padding: 2rem 2rem 0;
+}
+@media (max-width: 500px) {
+  header nav ul li {
+    padding: 1rem;
+  }
 }
 footer {
   color: #22283B;

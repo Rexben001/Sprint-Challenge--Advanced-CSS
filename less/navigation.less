@@ -7,11 +7,17 @@ header{
         padding: 1rem;
         font-size: 150%;
         background-color: @light-waterloo;
+        @media @phone{
+            margin: 1rem 0 0;
+        }
         ul{
             .display-flex(row);
             justify-content: space-evenly;
             li{
                 padding: 2rem 2rem 0;
+                @media @phone{
+                    padding: 1rem;
+                }
             }
         }
     }
