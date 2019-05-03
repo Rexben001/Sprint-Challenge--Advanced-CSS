@@ -5,12 +5,11 @@
   flex-direction: @flex-direction;
 }
 
-.btn-style(@width, @bg-color) {
+.btn-style(@width, @border-radius, @padding) {
   width: @width;
-  background-color: @bg-color;
-  padding: 1rem;
-  width: 30%;
-  border-radius: 10px;
+  background-color: @btn-bg-color;
+  padding: @padding;
+  border-radius: @border-radius;
   color: @wild-sand;
   text-align: center;
   font-size: 1.5rem;

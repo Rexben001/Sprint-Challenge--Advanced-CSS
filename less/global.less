@@ -12,6 +12,12 @@ html, body {
   color: @main-font-color;
   width: 90%;
   margin: 0 auto;
+  @media @tablet{
+    width: 100%;
+  }
+  @media @phone{
+    width: 100%;
+  }
 }
 
 h1, h2, h3, h4, h5 {
@@ -36,6 +42,9 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;  
+  @media @tablet{
+    max-width: 800px;
+  }
   @media @phone{
     max-width: 500px;
   }
