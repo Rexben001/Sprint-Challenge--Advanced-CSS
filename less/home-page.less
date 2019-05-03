@@ -76,22 +76,6 @@
         margin-bottom: 26px;
       }
 
-      .btn {
-        .btn-style(30%, 10px, 1rem);
-        transition: 1s ease-in;
-        @media @tablet {
-          .btn-style(60%, 5px, 1.5rem);
-          margin: 0 auto;
-        }
-        @media @phone {
-          .btn-style(90%, 5px, 1.5rem);
-          margin: 0 auto;
-        }
-        &:hover {
-          background-color: @wild-sand;
-          color: @btn-bg-color;
-        }
-      }
     }
 
     .walk-img {
@@ -111,3 +95,20 @@
     }
   }
 } // home
+
+.btn {
+  .btn-style(30%, 10px, 1rem);
+  transition: 1s ease-in;
+  @media @tablet {
+    .btn-style(60%, 5px, 1.5rem);
+    margin: 0 auto;
+  }
+  @media @phone {
+    .btn-style(90%, 5px, 1.5rem);
+    margin: 0 auto;
+  }
+  &:hover {
+    background-color: @wild-sand;
+    color: @btn-bg-color;
+  }
+}
